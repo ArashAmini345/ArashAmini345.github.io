@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .btn-link{font-weight:400;color:#fff;border-radius:0}.btn-link,.btn-link.active,.btn-link:active,.btn-link[disabled],fieldset[disabled] .btn-link{background-color:transparent;-webkit-box-shadow:none;box-shadow:none}.btn-link,.btn-link:active,.btn-link:focus,.btn-link:hover{border-color:transparent}.btn-link:focus,.btn-link:hover{color:#23527c;text-decoration:underline;background-color:transparent}.btn-link[disabled]:focus,.btn-link[disabled]:hover,fieldset[disabled] .btn-link:focus,fieldset[disabled] .btn-link:hover{color:#777;text-decoration:none}
+        .container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+    </style>
+    <meta charset="UTF-8">
+    <title>Ghalbeyou WebServies</title>
+    <link rel="stylesheet" href="css/styleTest.css">
+    <link rel="stylesheet" href="s.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <script>
+        function Register()
+        {
+            document.getElementById("web").style.display = 'none';
+            document.getElementById("reg").style.display = '';
+        }
+    </script>
+<h1>وب سرویس گیم پلی فارسی باآرش</h1>
+<br>
+<div id="web" style="display: ;">
+    <p>به وبگاه جدید گیم پلی فارسی باآرش ( آزمایشی ) خوش آمدید!</p><p>همان وبگاه قبلی ولی بهتر ...</p><p>اکنون با ثبت نام کردن یا وارد شدن شروع کنید :&nbsp;</p><p>&nbsp;</p>
+    <br>
+<button id="register" onclick="Register()" class="btn btn-link">ثبت نام</button>        <button onclick="Login()" class="btn btn-link">وارد شدن</button>
+<Br>
+    <h1>ثب نام</h1>
+    <br>
+    <p>برای ثبت نام کردن، لازم است که روی دکمه ثبت نام کیلیک کنید. اگر ندارید، <a href="#register">اینجارا </a> کیلیک کنید.</p>
+</div>
+<div id="reg" style="display: none;">
+    <form action="php_frms_register.php" method="GET">
+        <input name="name" value="نام کاربری">
+        <br>
+        <input type="submit" class="btn btn-link" value="ادامه »">
+    </form>
+</div>
+</body>
+</html>
